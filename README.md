@@ -69,8 +69,8 @@ También requiere verificación en dos pasos.
 
 ---
 
-Para visualizar la pagina se debe tener instalado Node 
-En la terminal donde se ejecutaran los comandos se debe inicializar los siguientes comandos:
+Para visualizar la pagina se debe tener instalado Node, 
+En la terminal se debe inicializar los siguientes comandos:
 "npm run dev"
 se debe abrir otra terminal se debe poner el siguiente comando:
 "node backend/server.js"
