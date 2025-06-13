@@ -1,7 +1,9 @@
-# Pagina-Universidad
+### **Pagina-Universidad**
 Proyecto final materia de programación web, Se tratade la pagina web de una universidad (UNIVERSIDAD CENTRAL)
 Primero se debe ingresar a la carpeta Backend y en el archivo index.js en la siguiente parte :
+
 ---
+**Parte del codigo del archivo index.js donde se debe agregar el correo y la contraseña**
 try {
 const transporter = nodemailer.createTransport({
 service: 'gmail',
@@ -10,7 +12,9 @@ user: 'correoejemplo@gmail.com', "agrega en esta parte tu correo"
 pass: 'contraseña',               "agrega en esta parte tu contraseña generada"
 },
 });
+
 ---
+
 se debe agregar el correo electronico y la contraseña, desde la cual se enviara un archivo pdf que se encuentra guardada en al carpeta Pdfs, el archivo que se enviara sera segun la carrera que se seleccione en el formulario.
 Para generar contraseñas para aplicaciones (también conocidas como "contraseñas de aplicación") en tu correo electrónico, necesitas acceder a la configuración de seguridad de tu cuenta. Aquí te dejo cómo hacerlo para los proveedores más comunes:
 
