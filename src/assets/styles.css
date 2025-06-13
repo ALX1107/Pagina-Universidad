@@ -1,0 +1,688 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  
+}
+
+body,html {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #1a0ba1;
+  color: #333;
+}
+
+.contenedor {
+  padding: 60px 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 20px auto;
+  background-color: #e9f1fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.titulo {
+  color: #3c0edf;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background:
+    linear-gradient(to right, rgba(229, 229, 190, 0.57), rgba(0, 58, 115, 0.44)),
+    url(../img/zhubo-aao\ and\ H\ design\ bring\ colorful\ outdoor\ learning\ to\ school\ in\ shenzhen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.nab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+nav > a {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+nav > a:hover {
+  color: #a3c7ff;
+  text-decoration: underline;
+}
+
+.textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h1 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.textos-header h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+
+.contenido-textos h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.contenido-textos h3 span {
+  background: #1d08df;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin-right: 8px;
+}
+
+.inr {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenido-textos p {
+  padding: 0 20px 30px 20px;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.portafolio {
+  background: #f2f2f2;
+  padding: 40px 0;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.imagen-port {
+  width: 100%;
+  max-width: 260px;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.imagen-port img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+  border-radius: 15px;
+}
+
+.imagen-port:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-port:hover img {
+  transform: scale(1.1);
+}
+
+.hover-galeria {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 119, 223, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.imagen-port:hover .hover-galeria {
+  opacity: 1;
+}
+
+.hover-galeria img {
+  width: 48px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+  transition: transform 0.25s ease;
+}
+
+.hover-galeria a:hover img {
+  transform: scale(1.3);
+}
+
+.hover-galeria p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.footer-info {
+  margin: 1rem 0;
+}
+
+.footer-info h5 {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.95rem;
+}
+
+/* Facultades Section */
+.facultades-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.facultades-title {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.facultades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+.facultad-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  background-color: #fff;
+}
+
+.facultad-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.facultad-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.facultad-card:hover .facultad-img {
+  transform: scale(1.07);
+}
+
+.facultad-hover {
+  padding: 18px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.facultad-hover a .hover-icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.facultad-hover a:hover .hover-icon {
+  transform: scale(1.3);
+}
+
+.facultad-hover p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #34495e;
+  margin: 0;
+}
+
+/* Instalaciones Section */
+.instalaciones-section {
+  background-color: #f5f8fa;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 15px #b8c1cc;
+  margin-top: 50px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instalaciones-section h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #2f3c4e;
+  margin-bottom: 35px;
+}
+
+.instalacion-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.instalacion-item img {
+  width: 44px;
+  height: 44px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.instalacion-item img:hover {
+  transform: scale(1.2);
+}
+
+.instalacion-item p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a5768;
+  margin: 0;
+}
+
+/* Layout para carruseles y texto */
+.instalaciones-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.caja-carrusel {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.caja-carrusel .carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.texto-derecha-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px;
+  max-width: 400px;
+  justify-content: flex-start;
+}
+
+.texto-caja {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #2c3e50;
+}
+
+.texto-caja h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.texto-caja p {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .texto-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .texto-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .facultades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contenido-textos p {
+    padding: 0 10px 20px 10px;
+  }
+
+  .instalaciones-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja-carrusel {
+    max-width: 100%;
+  }
+}
+/* Contenedor principal del formulario */
+.formulario-container {
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  max-width: 600px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+
+  max-width: 100%;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Sección general */
+.mision-vision {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.container-mision {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título */
+.container-mision h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* Distribución de columnas */
+.content-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cada columna */
+.column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+.column h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2980b9;
+}
+
+.column p {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}.facultad-page {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.facultad-header h1 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.facultad-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.facultad-content h2 {
+  color: #005599;
+  margin-top: 30px;
+}
+
+.volver-inicio {
+  margin-top: 40px;
+}
+
+.volver-inicio a {
+  text-decoration: none;
+  color: #007bff;
+}
+.facultad-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.facultad-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+.facultad-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.facultad-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #343a40;
+  text-decoration: underline;
+}
+
+.facultad-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facultad-content li {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.facultad-content img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.actividades-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.actividades-lista li {
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volver-inicio {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.volver-inicio a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.volver-inicio a:hover {
+  color: #084298;
+}
+.hero-section {
+  background: linear-gradient(to right, #4b6cb7, #182848); /* Gradiente elegante */
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title.second {
+  color: #ffc107; /* Amarillo vibrante */
+  font-size: 3.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: #f1f1f1;
+}
