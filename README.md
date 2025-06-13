@@ -7,11 +7,11 @@ Primero se debe ingresar a la carpeta Backend y en el archivo index.js en la sig
 
 
 try {
-const transporter = nodemailer.createTransport({.
-service: 'gmail',.
-auth: {.
-user: 'correoejemplo@gmail.com', "agrega en esta parte tu correo".
-pass: 'contraseña',               "agrega en esta parte tu contraseña generada".
+Const transporter = nodemailer.createTransport({.
+Service: 'gmail',.
+Auth: {.
+User: 'correoejemplo@gmail.com', "agrega en esta parte tu correo".
+Pass: 'contraseña',               "agrega en esta parte tu contraseña generada".
 },.
 });.
 
