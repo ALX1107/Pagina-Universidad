@@ -18,8 +18,9 @@ try {
 }
 
 
----
 
+```
+---
 se debe agregar el correo electronico y la contraseña, desde la cual se enviara un archivo pdf que se encuentra guardada en al carpeta Pdfs, el archivo que se enviara sera segun la carrera que se seleccione en el formulario.
 Para generar contraseñas para aplicaciones (también conocidas como "contraseñas de aplicación") en tu correo electrónico, necesitas acceder a la configuración de seguridad de tu cuenta. Aquí te dejo cómo hacerlo para los proveedores más comunes:
 
