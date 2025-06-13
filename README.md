@@ -6,14 +6,17 @@ Primero se debe ingresar a la carpeta Backend y en el archivo index.js en la sig
 **Parte del codigo del archivo index.js donde se debe agregar el correo y la contraseña:**
 
 
+```javascript
 try {
-Const transporter = nodemailer.createTransport({.
-Service: 'gmail',.
-Auth: {.
-User: 'correoejemplo@gmail.com', "agrega en esta parte tu correo".
-Pass: 'contraseña',               "agrega en esta parte tu contraseña generada".
-},.
-});.
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'correoejemplo@gmail.com', // agrega en esta parte tu correo
+      pass: 'contraseña'               // agrega en esta parte tu contraseña generada
+    },
+  });
+}
+
 
 ---
 
