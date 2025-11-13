@@ -12,3 +12,4 @@ export const enviarFormulario = async (formulario) => {
 
   return await res.json();
 };
+
