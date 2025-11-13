@@ -47,8 +47,8 @@ app.post('/api/formulario', async (req, res) => {
       auth: {
         // Credenciales de autenticación para la cuenta de Gmail.
         // NOTA: 'pass' debe ser una contraseña de aplicación generada por Google, no la contraseña de tu cuenta.
-        user: 'correoejemplo@gmail.com', // Dirección de correo del remitente.
-        pass: 'contraseña', // Contraseña de aplicación.
+        user: 'condorimartinezalexander@gmail.com', // Dirección de correo del remitente.
+        pass: 'ytlf snjz rkhi htmx', // Contraseña de aplicación.
       },
     });
 
