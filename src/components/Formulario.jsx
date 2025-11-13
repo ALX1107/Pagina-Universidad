@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { enviarFormulario } from "../api/formularioAPI.js";
+import { enviarFormulario } from "../api/formularioAPI";
 import "../assets/styles.css";
 
 export default function Formulario() {
