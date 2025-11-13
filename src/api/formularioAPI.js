@@ -1,5 +1,5 @@
 export const enviarFormulario = async (formulario) => {
-  const res = await fetch("https://pagina-universidad-3rgisgv4p-alx1107s-projects.vercel.app/src/api/formulario", {
+  const res = await fetch("/api/formulario", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formulario),
@@ -12,5 +12,3 @@ export const enviarFormulario = async (formulario) => {
 
   return await res.json();
 };
-
-
