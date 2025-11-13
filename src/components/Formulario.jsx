@@ -16,15 +16,15 @@ export default function Formulario() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const data = await enviarFormulario(formulario);
-      alert(`Respuesta backend: ${data.mensaje}\nDatos: ${JSON.stringify(data.datos)}`);
-    } catch (error) {
-      alert("Ocurrió un error al enviar el formulario: " + error.message);
-      console.error(error);
-    }
-  };
+  e.preventDefault();
+  try {
+    const data = await enviarFormulario(formulario);
+    alert(`Respuesta backend: ${data.mensaje}`);
+  } catch (error) {
+    alert("Ocurrió un error al enviar el formulario: " + error.message);
+    console.error(error);
+  }
+};
 
   return (
     <form onSubmit={handleSubmit} id="form">
